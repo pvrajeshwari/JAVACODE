@@ -1,0 +1,50 @@
+public class VariableClass2{
+	public static void main(String[] arg){
+	int totalNumberOfClass=10;
+	String myFamilyName = "Patil";
+	int totalNumberOfIplTeams=10;
+	String myFavouriteCar = "BMW";
+	int totalNumberOfBestCompany=50;
+	String bestCompany = "Tcs";
+	int my10thTotalMarks=480;
+	String mylocation="hubli";
+	int my12thTotalMarks=550;
+	String myName = "Rajeshwari";
+	int salary=35000;
+	String carBrand = "maruthi";
+	int maruthiCarPrice=20000;
+	String maruthiCarColor="Red";
+	int studentUsnNumber=25;
+	String studentName = "Rashi";
+	int studentSchoolfees=5000;
+	String studentFatherName = "Veeranagoud";
+	int studentAge=12;
+	String studentMotherName = "Akkama";
+	int studentschoolNumber=02;
+	//studentName="madhu";
+	//studentAge=20;
+	//studentFatherName="ravi";
+	//studentMotherName="pooja";
+	//mylocation="kamadolli";
+System.out.println(totalNumberOfClass);
+System.out.println(myFamilyName);
+System.out.println(totalNumberOfIplTeams);
+System.out.println(myFavouriteCar);
+System.out.println(totalNumberOfBestCompany);
+System.out.println(bestCompany);
+System.out.println(my10thTotalMarks);
+System.out.println(mylocation);
+System.out.println(my12thTotalMarks);
+System.out.println(myName);
+System.out.println(salary);
+System.out.println(carBrand);
+System.out.println(maruthiCarPrice);
+System.out.println(maruthiCarColor);
+System.out.println(studentUsnNumber);
+System.out.println(studentName);
+System.out.println(studentSchoolfees);
+System.out.println(studentFatherName);
+System.out.println(studentMotherName);
+System.out.println(studentschoolNumber);
+}
+}
