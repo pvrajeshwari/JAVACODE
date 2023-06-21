@@ -7,19 +7,19 @@
 	char[] vowels = {'a','e','i','o','u'};
 	char[] gender = {'M','F'};
 	float[] sgpa = {8.1f,8.4f,7.5f,9.1f,7.0f};
-	float[] heigth = {5.3f,4.3f,6.0f,5.32f};
+	float[] heigth = {5.3f,4.3f,6.0f,5.2f};
 	String[] name ={"rajeshwari","yash","pooja","anjali"};
 	String[] place ={"hubli","bengaluru"};
-	System.out.println(noOfClass[6]);
-	System.out.println(salarys[4]);
-	System.out.println(priceOfMobiles[5]);
-	System.out.println(grade[4]);
+	System.out.println(noOfClass[5]);
+	System.out.println(salarys[3]);
+	System.out.println(priceOfMobiles[4]);
+	System.out.println(grade[2]);
 	System.out.println(vowels[3]);
 	System.out.println(sgpa[1]);
 	System.out.println(gender[1]);
-	System.out.println(heigth[4]);
-	System.out.println(name[4]);
-	System.out.println(place[2]);
+	System.out.println(heigth[3]);
+	System.out.println(name[3]);
+	System.out.println(place[1]);
 	int[] roomNumber =new int[5];
 	roomNumber[0] = 101;
 	roomNumber[1] = 102;
@@ -76,6 +76,11 @@
 	manWeigth[2] = 11.5f;
 	manWeigth[3] = 15.5f;
 	manWeigth[4] = 22.8f;
+	String[] nameStudent= new String[3];
+	nameStudent[0]="Rajeshwari";
+	nameStudent[1]="madhu";
+	nameStudent[2]="jaya";
+
 
 	for(int i=0;i<roomNumber.length;i++){
 		System.out.println(roomNumber[i]);
@@ -96,10 +101,11 @@
 	{
 	System.out.println(colorOfTree);
 	}
-	System.out.println(windows);
-	System.out.println(rainbowColors);
-	System.out.println(subjects);
-	System.out.println(areaCrossNo);
+	System.out.println(windows[4]);
+	System.out.println(rainbowColors[6]);
+	System.out.println(subjects[4]);
+	System.out.println(areaCrossNo[4]);
+	System.out.println(nameStudent[2]);
 	
 	
 
