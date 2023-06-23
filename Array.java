@@ -99,7 +99,7 @@
 	}
 	for(int i=0;i<colorOfTree.length;i++)
 	{
-	System.out.println(colorOfTree);
+	System.out.println(colorOfTree[i]);
 	}
 	System.out.println(windows[4]);
 	System.out.println(rainbowColors[6]);
