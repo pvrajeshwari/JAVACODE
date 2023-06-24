@@ -1,22 +1,22 @@
 public class ReturnType2{
 	public static void main(String args[]){
 	char returnedValue = vowel();
-	System.out.println("returnedvalue");
+	System.out.println(returnedValue);
 	int mulValue = mul();
-	System.out.println("mulvalue");
+	System.out.println(mulValue);
 	boolean numberedValue = checkTheNo();
-	System.out.println("numberedvalue");
+	System.out.println(numberedValue);
 	long numberValue = phoneNo();
-	System.out.println("piValue");
+	System.out.println(numberValue);
 	double weightedValue = weight();
-	System.out.println("weightedValue");
+	System.out.println(weightedValue);
 	String brandValue = bagBrand();
-	System.out.println("brand valuealue");
-	int[] returnValue = method();
-	System.out.println("returnvalue");
+	System.out.println(brandValue);
+	int[] isStudent =nameMethod();
+       for(int i =0; i<=isStudent.length-1;i++)
+	System.out.println(isStudent);
 	}
 	public static char vowel(){
-		System.out.println("method started");
 		return 'A';
 	}
 	public static int mul(){
@@ -46,17 +46,17 @@ public class ReturnType2{
 			return weight;
 	}
 	public static String bagBrand(){
-			System.out.println("brand");
-			return "HP";
+			String name="Rajeshwari";
+			return name;
 	}
-	public static int[] method(){
-		int[] sampleNo = {1,2,3,4,5};
-		return sampleNo;
+	
+	
+	public static int[] nameMethod(){
+	
+		int[] isStudent = {2,3,3,4,5};
+			return isStudent;
 	}
-}
-
-
-
+	}
 
 
 
