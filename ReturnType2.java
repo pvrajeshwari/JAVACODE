@@ -12,9 +12,9 @@ public class ReturnType2{
 	System.out.println(weightedValue);
 	String brandValue = bagBrand();
 	System.out.println(brandValue);
-	int[] isStudent =nameMethod();
-       for(int i =0; i<=isStudent.length-1;i++)
-	System.out.println(isStudent);
+	int[] studentValue =nameMethod();
+       for(int i =0; i<=studentValue.length-1;i++)
+	System.out.println(studentValue[i]);
 	}
 	public static char vowel(){
 		return 'A';
