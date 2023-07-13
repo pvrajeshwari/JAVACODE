@@ -11,24 +11,24 @@ public class Bike{
 
 	public static void main(String[] args) {
 		Bike bike =new Bike(39976.56F,"red",true);
-		System.out.println(bike.getprice());
-		System.out.println(bike.getcolor());
-		System.out.println(bike.getisAvailable());
+		System.out.println(bike.getPrice());
+		System.out.println(bike.getColor());
+		System.out.println(bike.getIsAvailable());
 
-		System.out.println(bike.brand.getvalue());
-	    System.out.println(bike.tire.getvalue1());
+		System.out.println(bike.brand.getValue());
+	    System.out.println(bike.tire.getValue1());
 
 
 
 		
 	}
-	public float getprice(){
+	public float getPrice(){
 		return price;
 	} 
-	public String getcolor(){
+	public String getColor(){
 		return color;
 	}
-	public boolean getisAvailable(){
+	public boolean getIsAvailable(){
 		return isAvailable;
 	}
 }
@@ -38,7 +38,7 @@ enum BikeBrand{
 	BikeBrand(String value){
 		this.value = value;
 	}
-	public String getvalue(){
+	public String getValue(){
 		return value;
 	}
 }
@@ -48,7 +48,7 @@ enum BikeBrand{
 		NoTire(int value1){
 			this.value1 = value1;
 		}
-		public int getvalue1(){
+		public int getValue1(){
 			return value1;
 		}
 	}
