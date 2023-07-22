@@ -1,0 +1,196 @@
+JAVA TEST
+1.output:11 34
+ 
+2.illegal start of expression error
+           
+3.error
+
+4.output:
+(10,30,50,100)
+length:4
+sum=180
+
+6. Explain Method parameters?
+ans:In Java, method parameters are variables declared inside a method's parentheses that allow you to pass values to the method when it is called. 
+These parameters act as placeholders for the actual values that will be used inside the method's body. 
+When you call the method, you provide specific values called arguments, which are then assigned to the corresponding parameters.
+ex:public class Method {
+  static int add(int x, int y) {
+    return x + y;
+  }
+
+  public static void main(String[] args) {
+    System.out.println(add(5, 3));
+  }
+}
+
+7.How to achieve compile time polymorphism explain with example?
+ans:Compile-time polymorphism in Java is achieved through method overloading. 
+Method overloading allows a class to have multiple methods with the same name but different parameter lists.
+where the decision on which method to call is made at compile time based on the method's signature (number and types of parameters).
+On the other hand, runtime polymorphism (method overriding) occurs when a subclass provides a specific implementation of a method that is already defined in its superclass.
+The decision on which method implementation to call is made at runtime, based on the actual type of the object being referred to (dynamic binding).
+ex:public class MathOperations {
+    public static int add(int a, int b) {
+        return a + b;
+    }
+    public static int add(int a, int b, int c) {
+        return a + b + c;
+    }
+    public static double add(double a, double b) {
+        return a + b;
+    }
+    public static void main(String[] args) {
+        int num1 = 10;
+        int num2 = 5;
+        int num3 = 8;
+        double dNum1 = 3.5;
+        double dNum2 = 2.5;
+        int result1 = add(num1, num2);
+        System.out.println("Result of adding two integers: " + result1);
+        int result2 = add(num1, num2, num3);
+        System.out.println("Result of adding three integers: " + result2);
+        double result3 = add(dNum1, dNum2);
+        System.out.println("Result of adding two doubles: " + result3);
+    }
+}
+
+
+8)Explain Var-args?
+var-args means -VARIABLE LENGTH ARGUMENTS
+Ans:The varrags allows the method to accept zero or muliple arguments.
+It simplifies the syntax of calling methods with a varying number of parameters of the same type.
+The syntax for declaring varargs in Java is to use an ellipsis after the data type of the parameter in the method signature.
+The varargs parameter is treated as an array within the method, allowing you to pass any number of arguments of the specified type.
+Syntax
+public static void fun(int ... a) 
+{
+   // method body
+} 
+
+9.what is package and explain types of import's
+Ans:In Java, a package is a way to organize classes, interfaces, and other related resources into a single namespace.
+It serves as a directory structure for organizing Java source code files (.java) and compiled bytecode files (.class). 
+Packages help in avoiding naming conflicts, improving code organization, and providing better maintainability.
+//package com.example.myproject.mypackage;
+package can be access with 
+Using package name
+If you use package.* then all the classes and interfaces of this package will be accessible but not subpackages.
+Using package name.classname
+If you import package.classname then only declared class of this package will be accessible.
+Sub package 
+Package inside the package is called the subpackage. It should be created to categorize the package further.
+
+10.what is constructor chaining:constructor can be using the two differen method like using this keyword
+and super keyword
+To achieve constructor chaining, you use the this() keyword to call another constructor.
+The this() keyword must be the first statement in the constructor body, and it can only be used once within a constructor.
+The super keyword is a reference variable in Java that is used to access members (variables and methods) of the superclass. 
+
+public class Chicken {
+
+		double price;
+		String location;
+
+		Chicken(double price, String location)
+		{
+			this.price = price;
+			this.location = location;
+		}
+
+		void printInfo()
+		{
+			System.out.println("Running printInfo in Chicken");
+			System.out.println("Price : "+price);
+			System.out.println("Location : "+location);
+
+		}
+	}
+public class BroilerChicken extends Chicken{
+
+	boolean alive;
+	double weight;
+
+	public BroilerChicken(double price, String location, boolean alive, double weight)
+	{
+		super(price, location);
+		this.alive = alive;
+		this.weight = weight;
+
+	}
+
+	@Override
+	void printInfo()
+	{
+		System.out.println("Running printInfo in BroilerChicken");
+		super.printInfo();
+		System.out.println("Alive : "+alive);
+		System.out.println("Weight : "+weight);
+	}
+
+public class FarmChicken extends Chicken {
+
+	int noOfDays;
+	String careTaker;
+
+	public FarmChicken(double price, String location, int noOfDays, String careTaker)
+	{
+		super(price, location);
+		this.noOfDays = noOfDays;
+		this.careTaker = careTaker;
+	}
+
+	@Override
+	void printInfo()
+	{
+		System.out.println("Running printInfo in FarmChicken");
+		super.printInfo();
+		System.out.println("NoOfDays : "+noOfDays);
+		System.out.println("CareTaker : "+careTaker);
+	}
+
+}
+
+public class ChickenRunner {
+	public static void main(String[] args) {
+
+		System.out.println("Running main..........................\n");
+
+		Chicken ref1 = new Chicken(500, "Banglore\n");
+		ref1.printInfo();
+
+		Chicken ref2 = new FarmChicken(400, "Dharwad", 70, "Spiderman\n");
+		ref2.printInfo();
+
+		Chicken ref3 = new BroilerChicken(300, "Hubli", false, 7);
+		ref3.printInfo();
+
+
+	}
+
+14)Explain enumeration
+In Java, an enumeration is a special data type that allows you to define a set of named constants, also known as fixed set of constants. 
+Enumerations make your code more expressive, readable, and less error-prone by providing a way to represent a fixed set of values in a type-safe manner.
+example: days in weeks ,
+enum DayOfWeek {
+    MONDAY,
+    TUESDAY,
+    WEDNESDAY,
+    THURSDAY,
+    FRIDAY,
+    SATURDAY,
+    SUNDAY
+}
+15)what is happing inside the jvm when you create an object.
+While the JVM is running the program, whenever a new object is created, the JVM reserves as portion of the Heap for that object (where the object will be stored). 
+The amount of Heap that gets reserved is based on the size of the object.
+When an object from the MyObject class is created for the first time, the JVM searches the file system for the definition of the class, that is the Java byte code.
+The file has the extension of *.class . 
+The CLASSPATH environment variable contains locations where Java classes are stored.
+when you create an object 
+Class Loading
+Memory Allocation
+Constructor Invocation
+
+
+
